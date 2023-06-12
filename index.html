@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Todo List</h1>
+    <label>
+        <input id="taskInput" type="text" placeholder="Add a task">
+    </label>
+    <button id="addButton">Add</button>
+    <ul id="taskList"></ul>
+
+    <!-- The modal window -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label>
+                <input type="text" id="editTaskInput" placeholder="Edit task">
+            </label>
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
